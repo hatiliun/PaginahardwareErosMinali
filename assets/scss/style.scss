@@ -43,7 +43,17 @@ $color-background-header: rgb(83, 83, 228);
 $color-background-menuHamburguesa: #dec8ff;
 $color-linksHeader: white;
 $color-linksHeaderHover: bisque;
-$color-footer1: white;
+$color-footer1-background: white;
+$color-footer2-background: rgb(83, 83, 228);
+$color-footer2-text: white;
+$color-container-products: white;
+$color-shadow-card-products: black;
+$color-border-card-products: rgb(83, 83, 228);
+$color-information-card-products: lightgray;
+$color-form-accountBorder: rgb(83, 83, 228);
+$color-text-shopping: black;
+$color-text-contact: black;
+
 
 header {
     grid-area: header;
@@ -152,7 +162,7 @@ footer {
 
 
 .footer1 {
-    background-color: $color-footer1;
+    background-color: $color-footer1-background;
     display: flex;
     width: 100%;
 }
@@ -190,7 +200,7 @@ footer {
     padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgb(83, 83, 228);
+    background-color: $color-footer2-background;
     align-items: center;
 
 
@@ -202,17 +212,16 @@ footer {
 
 .contactanos {
     margin: 30px;
-    color: white;
+    color: $color-footer2-text;
 }
 
 
 .pRedesSociales {
-    color: white;
+    color: $color-footer2-text;
 }
 
 .footer2 li {
     display: inline-block;
-    text-decoration: white;
     padding: 3px;
 
 }
@@ -275,7 +284,7 @@ footer {
 
 
 .container_productos {
-    background-color: white;
+    background-color: $color-container-products;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -289,8 +298,8 @@ footer {
     flex-flow: column;
     border-radius: 6px;
     border-style: solid;
-    box-shadow: 0 0 0.1em black;
-    border-color: rgb(83, 83, 228);
+    box-shadow: 0 0 0.1em $color-shadow-card-products;
+    border-color: $color-border-card-products;
     cursor: pointer;
     transition-property: box-shadow;
     transition-duration: 0.3s;
@@ -299,7 +308,7 @@ footer {
 
 }
 .producto:hover {
-    box-shadow: 0 0 0.5em black;
+    box-shadow: 0 0 0.5em $color-shadow-card-products;
 }
 
 .producto > img {
@@ -309,7 +318,7 @@ footer {
 }
 
 .informacion {
-    border-top: 1px solid rgb(230, 230, 230);
+    border-top: 1px solid $color-information-card-products;
     padding: 1em;
     display: flex;
     flex-flow: column;
@@ -347,7 +356,7 @@ footer {
     flex-wrap: wrap;
     border-style: solid;
     border-width: 5px;
-    border-color: rgb(83, 83, 228);
+    border-color: $color-form-accountBorder;
     border-radius: 10px;
 }
 
@@ -392,7 +401,7 @@ footer {
 
 .textoCarrito {
     text-align: center;
-    color: black;
+    color: $color-text-shopping;
     line-height: 35px;
     margin-top: 2%;
     margin-bottom: 19%;
@@ -406,7 +415,7 @@ footer {
 
 .textoContactanos {
     text-align: center;
-    color: black;
+    color: $color-text-contact;
     line-height: 35px;
     margin-top: 2%;
     margin-bottom: 15%;
@@ -415,3 +424,4 @@ footer {
 .textoContactanos ul li {
     list-style: none;
 }
+
