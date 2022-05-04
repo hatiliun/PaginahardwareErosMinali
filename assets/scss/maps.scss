@@ -1,0 +1,13 @@
+$redes: (
+    Facebook: blue,
+    Instagram: red,
+);
+
+.botonFacebook {
+    color: map-get($map: $redes, $key: Facebook);
+}
+
+.botonInstagram {
+    color: map-get($map: $redes, $key: Instagram);
+}
+

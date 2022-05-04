@@ -1,0 +1,13 @@
+.hoverContactanos {
+    @extend .contactanos;
+    &:hover {
+        color:bisque;
+    }
+}
+
+.hover_menuHamburguesa {
+    @extend .enlaceMenuHamburguesa;
+        &:hover {
+            color: bisque;
+    }
+}

@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import "./colors.scss";
+@import "./extend.scss";
+@import "./mixins.scss";
+@import "./maps.scss";
+
 
 * {
     font-family: 'Roboto Condensed', sans-serif;
@@ -37,22 +42,7 @@ body {
     border: 1px solid black;
 }
 
-// COLORES
 
-$color-background-header: rgb(83, 83, 228);
-$color-background-menuHamburguesa: #dec8ff;
-$color-linksHeader: white;
-$color-linksHeaderHover: bisque;
-$color-footer1-background: white;
-$color-footer2-background: rgb(83, 83, 228);
-$color-footer2-text: white;
-$color-container-products: white;
-$color-shadow-card-products: black;
-$color-border-card-products: rgb(83, 83, 228);
-$color-information-card-products: lightgray;
-$color-form-accountBorder: rgb(83, 83, 228);
-$color-text-shopping: black;
-$color-text-contact: black;
 
 
 header {
@@ -80,13 +70,15 @@ header {
         background-clip: padding-box;
         outline: 0;
         transition: transform .3s ease-in-out;
+
 }
 
-li,
-a {
+.enlaceMenuHamburguesa {
     font-weight: bold;
     font-size: medium;
     text-decoration: none;
+    color: black;
+    margin: 10px;
 }
 
 .headerLogo {
@@ -101,16 +93,13 @@ a {
 
 .headerEnlaces_item {
     list-style: none;
+    text-decoration: none;
     color: $color-linksHeader;
     font-size: 18px;
     line-height: 30px;
     top: 60px;
     margin: 10px;
 }
-
-
-
-
 
 
 .headerEnlaces li {
@@ -211,6 +200,7 @@ footer {
 }
 
 .contactanos {
+    text-decoration: none;
     margin: 30px;
     color: $color-footer2-text;
 }
