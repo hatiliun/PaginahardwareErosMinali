@@ -35,7 +35,9 @@ body {
 
 #grilla {
   display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer";
   grid-template-rows: 6% 74% 20%;
   grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
@@ -105,7 +107,7 @@ header {
   color: bisque; }
 
 .headerBarra {
-  width: 500px;
+  width: 50vw;
   height: 40px;
   border-radius: 10px;
   font-size: larger; }
