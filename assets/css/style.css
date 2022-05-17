@@ -35,9 +35,7 @@ body {
 
 #grilla {
   display: grid;
-  grid-template-areas: "header header header"
- "main main main"
- "footer footer footer";
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
   grid-template-rows: 6% 74% 20%;
   grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
@@ -189,6 +187,23 @@ footer {
 
 .redSocial2 {
   width: 50px; }
+
+@media (max-width: 335px) {
+  .patrocinador1 {
+    width: 50px; }
+  .patrocinador2 {
+    width: 50px; }
+  .patrocinador3 {
+    width: 50px; }
+  .redSocial1 {
+    width: 20px; }
+  margin-left: 10px;
+  .redSocial2 {
+    width: 20px; }
+  margin-left: 25px;
+  .pRedesSociales {
+    color: white;
+    margin-left: 20px; } }
 
 @media (max-width: 1661px) {
   .footerProductos {

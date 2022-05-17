@@ -229,6 +229,29 @@ footer {
 
 
 
+@media (max-width:335px) {
+    .patrocinador1 {
+        width: 50px; }
+      
+    .patrocinador2 {
+        width: 50px; }
+      
+    .patrocinador3 {
+        width: 50px; }
+      
+        .redSocial1 {
+            width: 20px; }
+            margin-left: 10px;
+          
+          .redSocial2 {
+            width: 20px; }    
+            margin-left: 25px;
+
+            .pRedesSociales {
+                color: $color-footer2-text;
+                margin-left: 20px;
+            }
+}
 
 
 @media (max-width:1661px) {
