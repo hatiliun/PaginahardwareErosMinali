@@ -26,7 +26,7 @@ body {
     ;
     grid-template-rows: 6% 74% 20%;
     grid-template-columns: 1fr 1fr 1fr;
-    height:100vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -34,7 +34,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     width: 100%;
-    
+
 }
 
 
@@ -59,17 +59,17 @@ header {
 }
 
 .offcanvas {
-        position: fixed;
-        bottom: 0;
-        z-index: 1045;
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        visibility: hidden;
-        background-color: $color-background-menuHamburguesa;
-        background-clip: padding-box;
-        outline: 0;
-        transition: transform .3s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    z-index: 1045;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    visibility: hidden;
+    background-color: $color-background-menuHamburguesa;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform .3s ease-in-out;
 
 }
 
@@ -231,26 +231,31 @@ footer {
 
 @media (max-width:335px) {
     .patrocinador1 {
-        width: 50px; }
-      
-    .patrocinador2 {
-        width: 50px; }
-      
-    .patrocinador3 {
-        width: 50px; }
-      
-        .redSocial1 {
-            width: 20px; }
-            margin-left: 10px;
-          
-          .redSocial2 {
-            width: 20px; }    
-            margin-left: 25px;
+        width: 50px;
+    }
 
-            .pRedesSociales {
-                color: $color-footer2-text;
-                margin-left: 20px;
-            }
+    .patrocinador2 {
+        width: 50px;
+    }
+
+    .patrocinador3 {
+        width: 50px;
+    }
+
+    .redSocial1 {
+        width: 20px;
+        margin-left: 10px;
+    }
+
+    .redSocial2 {
+        width: 20px;
+        margin-left: 25px;
+    }
+
+    .pRedesSociales {
+        color: $color-footer2-text;
+        margin-left: 20px;
+    }
 }
 
 
@@ -270,7 +275,7 @@ footer {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-top:850px ;
+        margin-top: 850px;
     }
 }
 
@@ -280,7 +285,7 @@ footer {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-top:2200px ;
+        margin-top: 2200px;
     }
 }
 
@@ -292,7 +297,7 @@ footer {
     grid-template-rows: 1fr 1fr;
     width: 100%;
     height: 100vh;
-    
+
 }
 
 
@@ -320,11 +325,12 @@ footer {
     margin: 10px;
 
 }
+
 .producto:hover {
     box-shadow: 0 0 0.5em $color-shadow-card-products;
 }
 
-.producto > img {
+.producto>img {
     width: 250px;
     max-width: 100%;
     object-fit: cover;
@@ -336,14 +342,15 @@ footer {
     display: flex;
     flex-flow: column;
 }
+
 .informacion *+* {
     margin-bottom: 1em;
 }
 
 .precio {
     font-size: 1.5em;
-    
-    
+
+
 }
 
 .descripcion {
@@ -351,7 +358,7 @@ footer {
 }
 
 
-   /* CUENTA.HTML */
+/* CUENTA.HTML */
 
 
 .containerCuenta {
@@ -437,4 +444,3 @@ footer {
 .textoContactanos ul li {
     list-style: none;
 }
-
