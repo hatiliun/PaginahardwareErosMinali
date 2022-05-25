@@ -465,6 +465,7 @@ footer {
     .form-register .button:hover {
       border-color: bisque;
       box-shadow: 1px 1px 1px bisque;
+      color: bisque;
     }
 
     @media (max-width:600px) {
@@ -485,40 +486,80 @@ footer {
 /* CUENTA2.HTML */
 
 .textoCuenta2 {
-    text-align: center;
-    line-height: 35px;
-    margin-top: 2%;
-    margin-bottom: 13%;
+    width: 600px;
+    background-color:#5353e4;
+    padding: 40px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 7px 10px 30px #5353e4;
 }
 
-.textoCuenta2 ul li {
-    list-style: none;
+.textoCuenta2 h2 {
+    text-align: center;
 }
+
+.textoCuenta2 .button-account2 {
+    width: 515px;
+    background: blue;
+      padding: 12px;
+      color: white;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border-color: blue;
+      border-radius: 5px;
+    
+}
+
+.textoCuenta2 .button-account2:hover {
+    border-color: bisque;
+      box-shadow: 1px 1px 1px bisque;
+      color: bisque;
+    
+}
+
+@media (max-width:650px) {
+    .textoCuenta2 {
+        width: 300px;
+    }
+    .textoCuenta2 .button-account2 {
+        width: 220px;
+    }
+}
+
+@media (max-width:601px) {
+    .textoCuenta2 {
+        width: 270px;
+        margin-top: 300px;
+    }
+    .textoCuenta2 .button-account2 {
+        width: 185px;
+    }
+
+    .footerCuenta2 {
+        margin-top: 240px;
+    }
+}
+
+@media (max-width:305px) {
+    .textoCuenta2 {
+        width: 210px;
+        margin-top: 300px;
+    }
+    .textoCuenta2 .button-account2 {
+        width: 126px;
+    }
+
+    .footerCuenta2 {
+        margin-top: 240px;
+    }
+}
+
 
 /* CARRITO.HTML */
 
-.textoCarrito {
+.textoCuenta2 p {
     text-align: center;
-    color: $color-text-shopping;
-    line-height: 35px;
-    margin-top: 2%;
-    margin-bottom: 19%;
-}
-
-.textoCarrito ul li {
-    list-style: none;
-}
-
-/* CONTACTANOS.HTML */
-
-.textoContactanos {
-    text-align: center;
-    color: $color-text-contact;
-    line-height: 35px;
-    margin-top: 2%;
-    margin-bottom: 15%;
-}
-
-.textoContactanos ul li {
-    list-style: none;
 }
