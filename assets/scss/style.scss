@@ -39,7 +39,7 @@ body {
 
 
 .border {
-    border: 1px solid black;
+    border: 0px !important;
 }
 
 
@@ -89,6 +89,7 @@ header {
 .headerEnlaces {
     display: flex;
     flex-direction: row;
+    margin-bottom: 0px;
 }
 
 .headerEnlaces_item {
@@ -112,9 +113,9 @@ header {
 
 .headerBarra {
     width: 50vw;
-    height: 40px;
+    height: 35px;
     border-radius: 10px;
-    font-size: larger;
+    
 }
 
 @media (min-width:872px) {
@@ -162,6 +163,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    padding-left: 0px;
 }
 
 .patrocinadores li {
@@ -256,7 +258,19 @@ footer {
         color: $color-footer2-text;
         margin-left: 20px;
     }
+
+    .headerLogo {
+        width: 35px;
+        margin-left: -5px;
+    }
+
+    .navbar-toggler {
+        width: 51px;
+        height: 35px;
+    }
+
 }
+
 
 
 @media (max-width:1661px) {
@@ -275,7 +289,7 @@ footer {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-top: 850px;
+        margin-top: 1000px;
     }
 }
 
@@ -285,7 +299,7 @@ footer {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-top: 2200px;
+        margin-top: 2300px;
     }
 }
 
@@ -307,6 +321,7 @@ footer {
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 
@@ -341,7 +356,17 @@ footer {
     padding: 1em;
     display: flex;
     flex-flow: column;
+    align-items: center;
 }
+
+.informacion-extra{
+    border-top: 1px solid lightgray;
+    padding: 1.3em;
+    display: flex;
+    flex-flow: column; 
+    align-items: center;
+  }
+    
 
 .informacion *+* {
     margin-bottom: 1em;
@@ -357,6 +382,19 @@ footer {
     font-weight: 300;
 }
 
+.button-product {
+    width: 80px;
+    background-color: rgb(169, 164, 248);
+    border-radius: 5px;
+    border-color:rgb(169, 164, 248) ;
+  }
+  
+  .button-product:hover{
+    border-color: bisque;
+      box-shadow: 2px 2px 2px bisque;
+  }
+  
+
 
 /* CUENTA.HTML */
 
@@ -367,43 +405,83 @@ footer {
     align-items: center;
 }
 
-.flex__cuenta {
-    text-align: center;
-    justify-content: center;
-    height: 250px;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    border-style: solid;
-    border-width: 5px;
-    border-color: $color-form-accountBorder;
+.form-register {
+    width: 400px;
+    background-color:#5353e4;
+    padding: 40px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
     border-radius: 10px;
-}
+    color: white;
+    box-shadow: 7px 10px 30px #5353e4;
+    
+    }
+  
+    .form-register h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .controls {
+      width: 100%;
+      background: #beb2ec ;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid white;
+    }
+  
+    .form-register p {
+      height: 40px;
+      text-align: center;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  
+    .form-register a{
+      color: white;
+      text-decoration: none;
+    }
+  
+  
+    .form-register a:hover{
+      color: bisque;
+      text-decoration: underline;
+    }
+  
+    .form-register .button {
+      width: 100%;
+      background: blue;
+      padding: 12px;
+      color: white;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border-color: blue;
+      border-radius: 5px;
+    }
+  
+    .form-register .button:hover {
+      border-color: bisque;
+      box-shadow: 1px 1px 1px bisque;
+    }
 
-.flex__tituloFormulario {
-    font-size: larger;
-}
-
-.flex__contenidoFormulario {
-    padding-top: 5%;
-    padding-bottom: 8%;
-}
-
-.flex__correo {
-
-    margin-bottom: 10px;
-}
-
-.flex__contrasena {
-
-    margin-bottom: 10px;
-}
-
-.flex__botonContinuar {
-
-    margin-bottom: 10px;
-}
-
+    @media (max-width:600px) {
+        .carousel {
+            margin-top: 150px;
+        }
+        #grilla {
+            grid-template-rows: 15% 45% 40%;
+        }
+        .form-register {
+            width: 300px;
+            margin-top: 450px;
+        }
+        .footerCuenta {
+            margin-top: 500px;
+        }
+    }
 /* CUENTA2.HTML */
 
 .textoCuenta2 {
